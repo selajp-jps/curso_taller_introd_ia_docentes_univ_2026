@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la IA Generativa para Docentes Universitarios | Universidad Nacional de Luján</title>
+
+    <!-- Metatags de SEO -->
+    <meta name="description"
+        content="Taller de formación práctica sobre integración crítica de Inteligencia Artificial Generativa en el ámbito académico. Diseñado especialmente para docentes universitarios.">
+    <meta name="keywords"
+        content="IA Generativa, Docentes Universitarios, UNLu, Inteligencia Artificial, Educación Superior, Taller Docente, Prompts, Moodle">
+    <meta name="author" content="Departamento de Ciencias Sociales - UNLu">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Introducción a la IA Generativa para Docentes Universitarios | UNLu">
+    <meta property="og:description"
+        content="Espacio de aprendizaje práctico para docentes. Co-creación asistida por IA, herramientas textuales, visuales, evaluación y reflexión pedagógica.">
+    <meta property="og:image" content="images/og-image.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-container" id="nav-logo">
+                <img src="images/LogoUNLuTransparente.png" alt="Escudo Universidad Nacional de Luján"
+                    class="nav-logo-img">
+                <span class="logo-text">
+                    <span class="logo-unlu">Universidad Nacional de Luján</span>
+                    <span class="logo-title">Departamento de Ciencias Sociales</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#programa" id="link-programa">Programa</a>
+                <a href="#cronograma" id="link-cronograma">Cronograma</a>
+                <a href="#requisitos" id="link-requisitos">Requisitos</a>
+                <a href="#docentes" id="link-docentes">Equipo Docente</a>
+                <a href="#inscripcion" id="link-inscripcion" class="btn btn-secondary"
+                    style="padding: 0.5rem 1.25rem;">Inscribirme</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content hero">
+                <div class="hero-tag-container">
+                    <span class="tag tag-accent">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Inscripción abierta
+                    </span>
+                    <span class="tag">100% Virtual</span>
+                    <span class="tag">Curso-Taller de Posgrado</span>
+                </div>
+                <h1>Introducción a la IA Generativa<br>para Docentes Universitarios</h1>
+                <p class="lead">Un espacio de formación práctica diseñado para explorar, producir y reflexionar sobre la
+                    integración crítica de herramientas de inteligencia artificial en la actividad académica.</p>
+
+                <div class="btn-group">
+                    <a href="#inscripcion" class="btn btn-primary" id="hero-btn-enroll">Inscripción al Curso-Taller</a>
+                    <a href="#programa" class="btn btn-secondary" id="hero-btn-program">Ver Programa Académico</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="images/sala-profesores.png"
+                    alt="Docentes universitarios trabajando en un espacio de formación colaborativa" loading="lazy">
+            </div>
+        </div>
+        <div class="hero-divider"></div>
+    </header>
+
+    <!-- METRICAS / STATS -->
+    <section class="container" style="padding-top: 0; padding-bottom: 3rem;">
+        <div class="stats-grid">
+            <div class="stat-card" id="stat-duracion">
+                <h3>36 hs</h3>
+                <p>Duración Total</p>
+                <span>8 semanas de cursada</span>
+            </div>
+            <div class="stat-card" id="stat-modalidad">
+                <h3>Virtual</h3>
+                <p>Modalidad</p>
+                <span>Moodle UNLu + Sincrónico</span>
+            </div>
+            <div class="stat-card" id="stat-arancel">
+                <h3>Gratuito</h3>
+                <p>Costo UNLu</p>
+                <span>Sin matrícula de inscripción</span>
+            </div>
+            <div class="stat-card" id="stat-destinatarios">
+                <h3>Docentes</h3>
+                <p>Destinatarios</p>
+                <span>Para docentes universitarios</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOCO PEDAGÓGICO -->
+    <section class="container" style="padding-top: 0; padding-bottom: 4rem;">
+        <div class="foco-pedagogico" id="foco-pedagogico">
+            <div class="foco-tag">Principio Metodológico</div>
+            <h3>Aprender produciendo, evaluar reflexionando</h3>
+            <p>Este taller se desarrolla bajo una lógica de laboratorio dinámico, sin tecnicismos innecesarios: cada
+                propuesta se enfoca en resolver necesidades reales del trabajo docente. La estructura está pensada para
+                experimentar en primera persona el doble momento: la producción guiada asistida por IA y la posterior
+                decantación crítica de sus implicancias pedagógicas en las aulas universitarias.</p>
+        </div>
+    </section>
+
+    <!-- PROGRAMA ACADÉMICO -->
+    <section class="container" id="programa" style="padding-top: 2rem;">
+        <div class="section-header">
+            <span class="section-tag">Contenidos</span>
+            <h2>Estructura de los Laboratorios</h2>
+            <p>Un recorrido incremental estructurado para potenciar tus competencias docentes con Inteligencia
+                Artificial.</p>
+        </div>
+
+        <div class="grid-laboratorios">
+            <!-- Módulo 0 -->
+            <div class="lab-card" id="card-modulo-0">
+                <div class="lab-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Módulo 0 • Asincrónico
+                </div>
+                <h3>Panorama Básico de la IA</h3>
+                <p>Modelos de lenguaje, capacidades generales y primeros entornos de trabajo. Incluye bot de consultas y
+                    nivelación técnica inicial para todos los participantes.</p>
+            </div>
+
+            <!-- Módulo 1 -->
+            <div class="lab-card" id="card-modulo-1">
+                <div class="lab-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Módulo 1 • Mixto
+                </div>
+                <h3>Laboratorio de Producción Textual</h3>
+                <p>Escritura académica y didáctica con IA: diseño estructurado y refinamiento de guías de lectura,
+                    glosarios especializados, casos de enseñanza, situaciones problemáticas y guiones didácticos.</p>
+            </div>
+
+            <!-- Módulo 2 -->
+            <div class="lab-card" id="card-modulo-2">
+                <div class="lab-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    Módulo 2 • Mixto
+                </div>
+                <h3>Laboratorio de Imagen y Audio</h3>
+                <p>Generación y edición de recursos multimedia: ilustraciones conceptuales, infografías pedagógicas,
+                    avatares interactivos y producción ágil de contenidos breves en formato podcast.</p>
+            </div>
+
+            <!-- Módulo 3 -->
+            <div class="lab-card" id="card-modulo-3">
+                <div class="lab-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                    Módulo 3 • Mixto
+                </div>
+                <h3>Laboratorio de Video y Lipsync</h3>
+                <p>Producción audiovisual docente ágil: creación de videos educativos breves, técnicas avanzadas de
+                    sincronización de voz con avatar (lipsync) y subtitulado asistido.</p>
+            </div>
+
+            <!-- Módulo 4 -->
+            <div class="lab-card" id="card-modulo-4">
+                <div class="lab-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="9" y1="15" x2="10" y2="15"></line>
+                        <line x1="15" y1="15" x2="15" y2="15"></line>
+                        <line x1="9" y1="19" x2="10" y2="19"></line>
+                        <line x1="15" y1="19" x2="15" y2="19"></line>
+                        <line x1="9" y1="11" x2="10" y2="11"></line>
+                        <line x1="15" y1="11" x2="15" y2="11"></line>
+                    </svg>
+                    Módulo 4 • Mixto
+                </div>
+                <h3>Evaluación y Asistentes Simples</h3>
+                <p>Diseño de consignas evaluativas e instrumentos de evaluación (rúbricas formativas automatizadas),
+                    feedback pedagógico asistido y bots simples personalizados de acompañamiento al estudiante.</p>
+            </div>
+
+            <!-- Cierre -->
+            <div class="lab-card lab-card-dashed" id="card-modulo-cierre">
+                <div class="lab-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Último encuentro sincrónico: Presentación de Trabajos
+                </div>
+                <h3>Coloquio de Integración Final</h3>
+                <p>Presentación colectiva y debate de los avances de la intervención áulica diseñada. Discusión abierta,
+                    balance conceptual y reflexiones sobre el rol docente frente a la IA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRONOGRAMA -->
+    <section class="container" id="cronograma" style="padding-top: 0;">
+        <div class="section-header">
+            <span class="section-tag">Fechas Clave</span>
+            <h2>Cronograma de Encuentros</h2>
+            <p>Un encuentro sincrónico abre cada módulo; el resto de la semana se trabaja de forma asincrónica en el
+                aula virtual. Todos los encuentros se realizan de 18 a 21 horas.</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item" id="fecha-inicio">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">19/08</div>
+                <div class="timeline-label">Inicio del Taller</div>
+                <p class="timeline-desc">Apertura. Semana asincrónica del Módulo 0 (nivelación).</p>
+            </div>
+            <div class="timeline-item" id="fecha-enc1">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">26/08</div>
+                <div class="timeline-label">Encuentro Sincrónico 1</div>
+                <p class="timeline-desc">Apertura del Módulo 1 · Producción Textual.</p>
+            </div>
+            <div class="timeline-item" id="fecha-enc2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">02/09</div>
+                <div class="timeline-label">Encuentro Sincrónico 2</div>
+                <p class="timeline-desc">Apertura del Módulo 2 · Imagen y Audio.</p>
+            </div>
+            <div class="timeline-item" id="fecha-enc3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">16/09</div>
+                <div class="timeline-label">Encuentro Sincrónico 3</div>
+                <p class="timeline-desc">Apertura del Módulo 3 · Video y Lipsync.</p>
+            </div>
+            <div class="timeline-item" id="fecha-enc4">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">30/09</div>
+                <div class="timeline-label">Encuentro Sincrónico 4</div>
+                <p class="timeline-desc">Apertura del Módulo 4 · Actividades y Bots.</p>
+            </div>
+            <div class="timeline-item timeline-item-accent" id="fecha-cierre">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">07/10</div>
+                <div class="timeline-label">Encuentro Sincrónico 5</div>
+                <p class="timeline-desc">Presentación de los Trabajos Finales Integradores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJO FINAL INTEGRADOR -->
+    <section class="container" style="padding-top: 0;">
+        <div class="tfi-box" id="tfi-box">
+            <h3>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                Trabajo Final Integrador (TFI)
+            </h3>
+            <p>La acreditación formal del taller requiere el diseño y presentación de una intervención pedagógica
+                concreta aplicada directamente a tu asignatura. El proyecto debe estructurarse bajo los siguientes
+                lineamientos:</p>
+            <ul class="tfi-list">
+                <li>Integración de al menos un recurso educativo propio diseñado y co-creado en los laboratorios (sea de
+                    formato textual, visual o audiovisual).</li>
+                <li>Diseño detallado de una actividad pedagógica o un instrumento de evaluación específico de la
+                    asignatura elegido.</li>
+                <li>Mapeo metodológico explícito y registro documentado de los prompts de interacción clave utilizados
+                    durante el proceso creativo.</li>
+                <li>Breve fundamentación teórica de las decisiones pedagógicas adoptadas a la luz de los debates
+                    académicos sobre IA.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- REQUISITOS Y CERTIFICACION -->
+    <section class="container two-cols" id="requisitos" style="padding-top: 2rem;">
+        <!-- Requisitos -->
+        <div class="two-cols-card" id="card-requisitos">
+            <h3>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="15" x2="23" y2="15"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="15" x2="4" y2="15"></line>
+                </svg>
+                Requisitos Técnicos
+            </h3>
+            <ul class="req-list">
+                <li>Computadora personal con acceso estable a Internet.</li>
+                <li>Cuentas registradas (gratuitas) en las plataformas de IA Generativa que se indicarán en el Módulo 0.
+                </li>
+                <li>Conocimientos básicos de navegación e interacción digital.</li>
+            </ul>
+        </div>
+
+        <!-- Certificación -->
+        <div class="two-cols-card" id="card-certificacion">
+            <h3>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+                Certificación Académica
+            </h3>
+            <div class="cert-item">
+                <strong>Certificado de Asistencia:</strong>
+                <p>Requiere la participación activa en un mínimo de 75% de los encuentros virtuales sincrónicos
+                    pautados.</p>
+            </div>
+            <hr class="cert-divider">
+            <div class="cert-item">
+                <strong>Certificado de Aprobación:</strong>
+                <p>Asistencia a encuentros sincrónicos, realización de las actividades asincrónicas propuestas y
+                    aprobación del Trabajo Final Integrador.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO DOCENTE -->
+    <section class="container" id="docentes" style="padding-top: 2rem;">
+        <div class="section-header">
+            <span class="section-tag">Equipo</span>
+            <h2>Cuerpo Académico</h2>
+            <p>Docentes y especialistas a cargo del diseño y dictado pedagógico del taller.</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Pablo Sela -->
+            <div class="team-card" id="team-sela">
+                <div class="team-avatar-container">
+                    <!-- Si existe la imagen local la cargamos, sino se muestra un fondo beige elegante -->
+                    <img src="images/Pablo_Sela_2026.png" alt="Prof. Jorge Pablo Sela" class="team-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div
+                        style="display:none; width:100%; height:100%; justify-content:center; align-items:center; background-color:var(--accent-light); color:var(--accent); font-family:'Segoe UI', sans-serif; font-size:2.5rem; font-weight:800; border-radius:50%;">
+                        JPS</div>
+                </div>
+                <h4>Prof. Jorge Pablo Sela</h4>
+                <div class="team-role">Docente Responsable</div>
+                <p class="team-bio">Profesor Asociado de la Universidad Nacional de Luján, especializado en pedagogía
+                    universitaria y la integración del ecosistema digital en las Ciencias Sociales.</p>
+            </div>
+
+            <!-- Ana Carolina D'Alessandro -->
+            <div class="team-card" id="team-dalessandro">
+                <div class="team-avatar-container">
+                    <img src="images/caro-dalessandro.png" alt="Ing. Ana Carolina D'Alessandro" class="team-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div
+                        style="display:none; width:100%; height:100%; justify-content:center; align-items:center; background-color:var(--accent-light); color:var(--accent); font-family:'Segoe UI', sans-serif; font-size:2.5rem; font-weight:800; border-radius:50%;">
+                        ACD</div>
+                </div>
+                <h4>Ing. Ana Carolina D'Alessandro</h4>
+                <div class="team-role">Disertante Invitada</div>
+                <p class="team-bio">Ingeniera en Sistemas, consultora de tecnología educativa y experta en el diseño e
+                    implementación práctica de flujos de trabajo basados en Inteligencia Artificial.</p>
+            </div>
+
+            <!-- Ricardo Castiñeira -->
+            <div class="team-card" id="team-castineira">
+                <div class="team-avatar-container">
+                    <img src="images/Ricardo_Castineira.jpg" alt="Ricardo Castiñeira" class="team-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div
+                        style="display:none; width:100%; height:100%; justify-content:center; align-items:center; background-color:var(--accent-light); color:var(--accent); font-family:'Segoe UI', sans-serif; font-size:2.5rem; font-weight:800; border-radius:50%;">
+                        RC</div>
+                </div>
+                <h4>Ricardo Castiñeira</h4>
+                <div class="team-role">Colaborador</div>
+                <p class="team-bio">Técnico Universitario en Administración y Gestión Universitaria. Especialidad:
+                    Tecnología, comunicaciones, Inteligencia Artificial aplicada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO E INSCRIPCIÓN -->
+    <section class="container" id="inscripcion" style="padding-top: 2rem;">
+        <div class="cta-section">
+            <span class="section-tag" style="margin-bottom: 0.5rem;">Matrícula y Cursada</span>
+            <h2>Inscripción al Taller</h2>
+
+            <div class="pricing-info">
+                <div class="price-box" id="price-unlu">
+                    <p>Destinatarios: Docentes Universitarios</p>
+                    <div class="price">Gratuito</div>
+                </div>
+            </div>
+
+            <div class="cta-date">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Inicio: 19/08/2026
+            </div>
+            <p class="cta-schedule">Encuentros sincrónicos vía Zoom, de 19 a 21 hs.</p>
+
+            <div class="cta-buttons">
+                <a href="https://forms.fillout.com/t/jn8wtdS9X4us" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;" id="btn-fillout">Solicitar
+                    Inscripción Online</a>
+                <a href="mailto:praxis9543@gmail.com" class="cta-email" id="link-email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    praxis9543@gmail.com
+                </a>
+            </div>
+
+            <div class="qr-container">
+                <!-- QR real y escaneable, generado a partir del link de inscripción -->
+                <svg class="qr-code" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="qr-svg" shape-rendering="crispEdges">
+                    <!-- Fondo Blanco -->
+                    <rect width="100" height="100" fill="#ffffff" />
+                    <!-- QR real generado para: https://forms.fillout.com/t/jn8wtdS9X4us -->
+                    <rect x="3.226" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="3.226" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="6.452" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="9.677" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="12.903" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="16.129" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="19.355" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="19.355" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="19.355" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="19.355" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="19.355" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="19.355" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="22.581" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="25.806" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="29.032" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="32.258" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="35.484" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="38.710" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="41.935" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="45.161" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="48.387" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="51.613" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="54.839" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="58.065" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="25.806" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="61.290" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="64.516" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="67.742" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="70.968" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="74.194" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="77.419" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="45.161" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="74.194" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="80.645" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="83.871" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="35.484" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="38.710" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="41.935" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="54.839" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="58.065" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="70.968" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="77.419" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="90.323" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="87.097" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="51.613" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="61.290" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="83.871" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="87.097" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="93.548" y="90.323" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="3.226" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="6.452" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="9.677" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="12.903" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="16.129" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="19.355" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="22.581" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="29.032" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="32.258" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="48.387" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="64.516" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="67.742" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                    <rect x="80.645" y="93.548" width="3.226" height="3.226" fill="#2C1A04"/>
+                </svg>
+                <span class="qr-caption">Escaneá para preinscribirte</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="unlu">Universidad Nacional de Luján</span>
+                <p class="dep">Departamento de Ciencias Sociales</p>
+            </div>
+            <p class="footer-text">Curso-Taller de Posgrado: Introducción a la IA Generativa para docentes
+                universitarios</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
