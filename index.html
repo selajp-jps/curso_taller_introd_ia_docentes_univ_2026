@@ -18,7 +18,9 @@
     <meta property="og:title" content="Introducción a la IA Generativa para Docentes Universitarios | UNLu">
     <meta property="og:description"
         content="Espacio de aprendizaje práctico para docentes. Co-creación asistida por IA, herramientas textuales, visuales, evaluación y reflexión pedagógica.">
-    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
@@ -81,7 +83,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="images/sala-profesores.png"
+                <img src="images/sala-profesores.jpg"
                     alt="Docentes universitarios trabajando en un espacio de formación colaborativa" loading="lazy">
             </div>
         </div>
@@ -92,9 +94,9 @@
     <section class="container" style="padding-top: 0; padding-bottom: 3rem;">
         <div class="stats-grid">
             <div class="stat-card" id="stat-duracion">
-                <h3>36 hs</h3>
+                <h3>32 hs</h3>
                 <p>Duración Total</p>
-                <span>8 semanas de cursada</span>
+                <span>+ Módulo 0 optativo</span>
             </div>
             <div class="stat-card" id="stat-modalidad">
                 <h3>Virtual</h3>
@@ -106,10 +108,10 @@
                 <p>Costo UNLu</p>
                 <span>Sin matrícula de inscripción</span>
             </div>
-            <div class="stat-card" id="stat-destinatarios">
-                <h3>Docentes</h3>
-                <p>Destinatarios</p>
-                <span>Para docentes universitarios</span>
+            <div class="stat-card" id="stat-cupo">
+                <h3>40</h3>
+                <p>Cupos Disponibles</p>
+                <span>Vacantes limitadas</span>
             </div>
         </div>
     </section>
@@ -216,7 +218,7 @@
                     </svg>
                     Módulo 4 • Mixto
                 </div>
-                <h3>Evaluación y Asistentes Simples</h3>
+                <h3>Laboratorio de Actividades, Evaluaciones y Bots</h3>
                 <p>Diseño de consignas evaluativas e instrumentos de evaluación (rúbricas formativas automatizadas),
                     feedback pedagógico asistido y bots simples personalizados de acompañamiento al estudiante.</p>
             </div>
@@ -231,7 +233,7 @@
                     </svg>
                     Último encuentro sincrónico: Presentación de Trabajos
                 </div>
-                <h3>Coloquio de Integración Final</h3>
+                <h3>Presentación de Avances del TFI</h3>
                 <p>Presentación colectiva y debate de los avances de la intervención áulica diseñada. Discusión abierta,
                     balance conceptual y reflexiones sobre el rol docente frente a la IA.</p>
             </div>
@@ -287,31 +289,28 @@
         </div>
     </section>
 
-    <!-- TRABAJO FINAL INTEGRADOR -->
+    <!-- METODOLOGÍA / GANCHO -->
     <section class="container" style="padding-top: 0;">
-        <div class="tfi-box" id="tfi-box">
-            <h3>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                    <path d="M2 17l10 5 10-5"></path>
-                    <path d="M2 12l10 5 10-5"></path>
-                </svg>
-                Trabajo Final Integrador (TFI)
-            </h3>
-            <p>La acreditación formal del taller requiere el diseño y presentación de una intervención pedagógica
-                concreta aplicada directamente a tu asignatura. El proyecto debe estructurarse bajo los siguientes
-                lineamientos:</p>
-            <ul class="tfi-list">
-                <li>Integración de al menos un recurso educativo propio diseñado y co-creado en los laboratorios (sea de
-                    formato textual, visual o audiovisual).</li>
-                <li>Diseño detallado de una actividad pedagógica o un instrumento de evaluación específico de la
-                    asignatura elegido.</li>
-                <li>Mapeo metodológico explícito y registro documentado de los prompts de interacción clave utilizados
-                    durante el proceso creativo.</li>
-                <li>Breve fundamentación teórica de las decisiones pedagógicas adoptadas a la luz de los debates
-                    académicos sobre IA.</li>
-            </ul>
+        <div class="metodologia-box" id="metodologia-box">
+            <div class="metodologia-image">
+                <img src="images/metodologia-hook.jpg"
+                    alt="Escritorio de un docente con cuaderno de planificación, notebook y libros de didáctica universitaria"
+                    loading="lazy">
+            </div>
+            <div class="metodologia-content">
+                <span class="section-tag">Cómo se trabaja</span>
+                <h3>No es un curso de herramientas. Es un curso de decisiones.</h3>
+                <p>Cada laboratorio arranca con un encuentro sincrónico que dispara la exploración, y se consolida
+                    con producción asincrónica sobre tu propia asignatura. No hay ejercicios genéricos: lo que
+                    producís en cada módulo —un caso, una imagen, un guion, una actividad— nace de la materia que
+                    realmente das. Al cierre, no te llevás una lista de apps: te llevás una intervención pensada y
+                    fundamentada, lista para tu aula.</p>
+                <ul class="metodologia-highlights">
+                    <li>El sincrónico abre, el asincrónico consolida.</li>
+                    <li>Producís sobre tu materia, no sobre ejercicios de práctica.</li>
+                    <li>Sin curva técnica previa: herramientas accesibles, desde cero.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -361,7 +360,9 @@
             <div class="cert-item">
                 <strong>Certificado de Aprobación:</strong>
                 <p>Asistencia a encuentros sincrónicos, realización de las actividades asincrónicas propuestas y
-                    aprobación del Trabajo Final Integrador.</p>
+                    aprobación del Trabajo Final Integrador (TFI): el diseño de una intervención pedagógica concreta
+                    para tu propia asignatura, con los recursos, la actividad y los prompts que usaste durante el
+                    taller.</p>
             </div>
         </div>
     </section>
